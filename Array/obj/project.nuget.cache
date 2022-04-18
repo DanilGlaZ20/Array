@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QJmz7HePSZ66xSMOxbjFJ4Y+/1XzJAyN0kBzZw6sMIAbdtiqzByEIJFajXP0kgHRsPPrEB2yAgndNuHA7IVUng==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\79777\\RiderProjects\\всем папкам папка\\Stack\\Main\\Array\\Array\\Array.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\79777\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
