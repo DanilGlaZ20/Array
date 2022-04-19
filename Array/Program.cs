@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Diagnostics.CodeAnalysis;
+using Microsoft.Win32.SafeHandles;
 
 namespace Array
 {
@@ -26,23 +27,27 @@ namespace Array
         public static void Common_el()
         {
             int number = 4;
-            int[] array = new int[number];
-            for (int i = 0; i < number; i++) array[i] = Convert.ToInt16(Console.ReadLine());
+            String[] array1 = new String[number];
+            String[] array2 = new String[number];
+            Console.WriteLine("Введите элементы первого масстива ");
+            for (int i = 0; i < number; i++) array1[i] = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Введите элементы второго масстива ");
+            for (int j = 0; j < number; j++) array2[j] = Convert.ToString(Console.ReadLine());
             for (int i = 0; i < number; i++)
             {
                 for (int j = 0; j < number; j++)
                 {
-                    if(array[i]==array[j]) Console.WriteLine();
+                    if (array1[i].Equals(array2[j]))
+                        Console.WriteLine($"Этот элемент присутствует в обоих массивах {array1[i]}");
                 }
-                
-                  
-                  
             }
-            }
+
+        }
 
         static void Main(string[] args)
         {
-            Train();
+            //Train();
+            Common_el();
         }
         
     }
