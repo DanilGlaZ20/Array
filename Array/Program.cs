@@ -104,9 +104,9 @@ namespace Array
 
         static void Main(string[] args)
             {
-                //Train();
-                //Common_el();
-                //Rotation();
+                Train();
+                Common_el();
+                Rotation();
                 Big_number();
             }
 
