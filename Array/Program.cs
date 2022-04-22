@@ -82,20 +82,23 @@ namespace Array
             int[] arr = new int[num];
             Console.WriteLine("Введите  элементы  массива: ");
             for (int i = 0; i < arr.Length; i++) arr[i] = Convert.ToInt16(Console.ReadLine());
-            int tmp=0;
+            int tmp = arr[0];
             Console.Write("Отсортированный массив: ");
-            for (int j = 0; j <= arr.Length - 1; j++)
+            for (int i = arr.Length - 1; i>=0;i--)
             {
-                for (int i = 0; i < arr.Length-1; i++)
-                    {
-                        if (arr[j] < arr[i])
-                        {
-                            Console.Write(arr[j] + " ");
-                        }
-                        break;
-                    }
-                //if( arr[j]==arr[arr.Length-1])Console.Write(arr[j] );
+
+                if (tmp < arr[i])
+                {
+                    tmp = arr[i];
+                    Console.Write(arr[i] + " ");
+                    
+                }
+                //if (arr[arr.Length - 1] > arr[0]) Console.WriteLine(arr[arr.Length-1]);
+                
+                
             }
+
+            
 
         }
 
